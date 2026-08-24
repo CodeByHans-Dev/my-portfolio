@@ -1399,5 +1399,23 @@ footer {
     .footer-links {
         flex-wrap: wrap;
     }
+   .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot-red {
+  background-color: red;
+}
+
+.dot-blue {
+  background-color: blue;
+}
+
+.dot-green {
+  background-color: green;
+}
 
 }
