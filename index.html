@@ -1,19 +1,29 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Hans Martin | Portfolio</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header>
+    <!-- ================= NAVBAR ================= -->
+
+    <header id="header">
         <nav class="navbar">
-            <h2 class="logo">HM.</h2>
+
+            <a href="#home" class="logo">
+                HM<span>.</span>
+            </a>
 
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
@@ -23,197 +33,640 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            <div class="nav-actions">
+
+                <!-- Dark Mode -->
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">
+                    🌙
+                </button>
+
+                <!-- Mobile Menu -->
+                <button id="menuBtn" class="menu-btn" aria-label="Open menu">
+                    ☰
+                </button>
+
+            </div>
+
         </nav>
     </header>
 
-    <!-- Home -->
+
+    <!-- ================= HERO ================= -->
+
     <section id="home" class="hero">
-        <div class="hero-content">
-            <p class="small-text">HELLO, I'M</p>
 
-            <h1>Hans Martin<br><span>Almoroto</span></h1>
+        <div class="hero-content reveal">
 
-            <p class="description">
-                A first-year IT student interested in web development,
-                programming, and creating useful digital solutions.
+            <div class="status">
+                <span class="status-dot"></span>
+                Available for projects
+            </div>
+
+            <p class="hello">HELLO, I'M</p>
+
+            <h1>
+                Hans Martin
+                <span>Almoroto</span>
+            </h1>
+
+            <h2>
+                I'm a <span id="typing"></span><span class="cursor">|</span>
+            </h2>
+
+            <p class="hero-description">
+                An Information Technology student passionate about
+                programming, web development, and building creative
+                digital solutions.
             </p>
 
-            <div class="buttons">
-                <a href="#projects" class="btn">View Projects</a>
-                <a href="#contact" class="btn secondary">Contact Me</a>
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn primary">
+                    View My Work →
+                </a>
+
+                <a href="#contact" class="btn secondary">
+                    Contact Me
+                </a>
+
             </div>
+
+            <div class="social-links">
+
+                <a href="#" aria-label="GitHub">GitHub</a>
+                <span>•</span>
+                <a href="#" aria-label="Facebook">Facebook</a>
+                <span>•</span>
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+
+            </div>
+
         </div>
+
+
+        <!-- Decorative graphic -->
+
+        <div class="hero-decoration">
+
+            <div class="circle circle-one"></div>
+            <div class="circle circle-two"></div>
+
+            <div class="code-card">
+                <div class="code-top">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <pre><code>
+&lt;developer&gt;
+    &lt;name&gt;Hans&lt;/name&gt;
+    &lt;passion&gt;Coding&lt;/passion&gt;
+    &lt;goal&gt;Create&lt;/goal&gt;
+&lt;/developer&gt;
+                </code></pre>
+            </div>
+
+        </div>
+
     </section>
 
-    <!-- About -->
+
+    <!-- ================= ABOUT ================= -->
+
     <section id="about" class="section">
-        <div class="section-title">
+
+        <div class="section-heading reveal">
             <p>GET TO KNOW ME</p>
-            <h2>About Me</h2>
+            <h2>About <span>Me</span></h2>
         </div>
 
-        <div class="about-content">
-            <div>
+        <div class="about-grid">
+
+            <div class="about-text reveal">
+
                 <p>
-                    I am an Information Technology student who enjoys learning
-                    about programming and web development.
+                    I'm an Information Technology student who enjoys
+                    learning how technology can solve real-world problems.
                 </p>
 
                 <p>
-                    I am currently developing my skills in HTML, CSS, JavaScript,
-                    Java, databases, and other technologies. I enjoy building
-                    projects that allow me to apply what I learn.
+                    I work with web technologies, programming languages,
+                    and databases. I'm constantly improving my skills by
+                    creating personal and academic projects.
                 </p>
+
+                <p>
+                    My goal is to become a skilled developer who can build
+                    useful, reliable, and visually appealing applications.
+                </p>
+
             </div>
 
-            <div class="about-info">
-                <div>
-                    <strong>Name</strong>
-                    <p>Hans Martin Almoroto</p>
+
+            <div class="about-card reveal">
+
+                <div class="info-item">
+                    <span>👨‍💻</span>
+                    <div>
+                        <small>Name</small>
+                        <strong>Hans Martin Almoroto</strong>
+                    </div>
                 </div>
 
-                <div>
-                    <strong>Course</strong>
-                    <p>Information Technology</p>
+                <div class="info-item">
+                    <span>🎓</span>
+                    <div>
+                        <small>Course</small>
+                        <strong>Information Technology</strong>
+                    </div>
                 </div>
 
-                <div>
-                    <strong>Focus</strong>
-                    <p>Web Development</p>
+                <div class="info-item">
+                    <span>💻</span>
+                    <div>
+                        <small>Specialization</small>
+                        <strong>Web Development</strong>
+                    </div>
                 </div>
+
+                <div class="info-item">
+                    <span>📍</span>
+                    <div>
+                        <small>Location</small>
+                        <strong>Philippines</strong>
+                    </div>
+                </div>
+
             </div>
+
         </div>
+
     </section>
 
-    <!-- Skills -->
+
+    <!-- ================= SKILLS ================= -->
+
     <section id="skills" class="section skills-section">
-        <div class="section-title">
-            <p>WHAT I WORK WITH</p>
-            <h2>My Skills</h2>
+
+        <div class="section-heading reveal">
+            <p>MY TECHNOLOGIES</p>
+            <h2>My <span>Skills</span></h2>
         </div>
+
 
         <div class="skills-grid">
 
-            <div class="skill-card">
-                <h3>HTML</h3>
-                <p>Creating structured and accessible web pages.</p>
+            <div class="skill-card reveal">
+
+                <div class="skill-icon html-icon">
+                    HTML
+                </div>
+
+                <div class="skill-info">
+                    <div class="skill-title">
+                        <strong>HTML</strong>
+                        <span>90%</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90%"></div>
+                    </div>
+
+                    <p>Semantic and structured web pages.</p>
+                </div>
+
             </div>
 
-            <div class="skill-card">
-                <h3>CSS</h3>
-                <p>Designing responsive and minimalist interfaces.</p>
+
+            <div class="skill-card reveal">
+
+                <div class="skill-icon css-icon">
+                    CSS
+                </div>
+
+                <div class="skill-info">
+                    <div class="skill-title">
+                        <strong>CSS</strong>
+                        <span>85%</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85%"></div>
+                    </div>
+
+                    <p>Responsive and modern interface design.</p>
+                </div>
+
             </div>
 
-            <div class="skill-card">
-                <h3>JavaScript</h3>
-                <p>Adding interaction and functionality to websites.</p>
+
+            <div class="skill-card reveal">
+
+                <div class="skill-icon js-icon">
+                    JS
+                </div>
+
+                <div class="skill-info">
+                    <div class="skill-title">
+                        <strong>JavaScript</strong>
+                        <span>75%</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75%"></div>
+                    </div>
+
+                    <p>Interactive and dynamic web applications.</p>
+                </div>
+
             </div>
 
-            <div class="skill-card">
-                <h3>Java</h3>
-                <p>Building applications and practicing object-oriented programming.</p>
+
+            <div class="skill-card reveal">
+
+                <div class="skill-icon java-icon">
+                    JAVA
+                </div>
+
+                <div class="skill-info">
+                    <div class="skill-title">
+                        <strong>Java</strong>
+                        <span>80%</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80%"></div>
+                    </div>
+
+                    <p>Object-oriented programming and applications.</p>
+                </div>
+
             </div>
 
-            <div class="skill-card">
-                <h3>MySQL</h3>
-                <p>Working with databases and storing application data.</p>
+
+            <div class="skill-card reveal">
+
+                <div class="skill-icon sql-icon">
+                    SQL
+                </div>
+
+                <div class="skill-info">
+                    <div class="skill-title">
+                        <strong>MySQL</strong>
+                        <span>75%</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75%"></div>
+                    </div>
+
+                    <p>Database design and data management.</p>
+                </div>
+
             </div>
 
-            <div class="skill-card">
-                <h3>GitHub</h3>
-                <p>Managing and publishing programming projects.</p>
+
+            <div class="skill-card reveal">
+
+                <div class="skill-icon git-icon">
+                    GIT
+                </div>
+
+                <div class="skill-info">
+                    <div class="skill-title">
+                        <strong>GitHub</strong>
+                        <span>70%</span>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="70%"></div>
+                    </div>
+
+                    <p>Version control and project publishing.</p>
+                </div>
+
             </div>
 
         </div>
+
     </section>
 
-    <!-- Projects -->
+
+    <!-- ================= PROJECTS ================= -->
+
     <section id="projects" class="section">
-        <div class="section-title">
-            <p>MY WORK</p>
-            <h2>Projects</h2>
+
+        <div class="section-heading reveal">
+            <p>MY RECENT WORK</p>
+            <h2>Featured <span>Projects</span></h2>
         </div>
+
+
+        <!-- Project filters -->
+
+        <div class="project-filters reveal">
+
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="web">
+                Web
+            </button>
+
+            <button class="filter-btn" data-filter="java">
+                Java
+            </button>
+
+            <button class="filter-btn" data-filter="database">
+                Database
+            </button>
+
+        </div>
+
 
         <div class="projects-grid">
 
-            <div class="project-card">
-                <div class="project-number">01</div>
 
-                <h3>Alumni Information System</h3>
+            <!-- Project 1 -->
 
-                <p>
-                    A web-based alumni information system designed to organize
-                    and manage alumni records with chatbot support.
-                </p>
+            <article class="project-card reveal" data-category="java database">
 
-                <div class="tags">
-                    <span>Java</span>
-                    <span>MySQL</span>
-                    <span>JDBC</span>
+                <div class="project-image project-one">
+                    <span>01</span>
                 </div>
-            </div>
 
-            <div class="project-card">
-                <div class="project-number">02</div>
+                <div class="project-content">
 
-                <h3>Personal Portfolio</h3>
+                    <div class="project-label">
+                        JAVA • DATABASE
+                    </div>
 
-                <p>
-                    A minimalist personal website created to showcase my
-                    skills, projects, and experience.
-                </p>
+                    <h3>Alumni Information System</h3>
 
-                <div class="tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
+                    <p>
+                        A system designed to organize alumni information
+                        with database integration and chatbot support.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>MySQL</span>
+                        <span>JDBC</span>
+                    </div>
+
+                    <a href="#" class="project-link">
+                        View Project →
+                    </a>
+
                 </div>
-            </div>
 
-            <div class="project-card">
-                <div class="project-number">03</div>
+            </article>
 
-                <h3>Programming Projects</h3>
 
-                <p>
-                    Various programming exercises and projects created while
-                    learning software development.
-                </p>
+            <!-- Project 2 -->
 
-                <div class="tags">
-                    <span>Java</span>
-                    <span>C++</span>
-                    <span>SQL</span>
+            <article class="project-card reveal" data-category="web">
+
+                <div class="project-image project-two">
+                    <span>02</span>
                 </div>
-            </div>
+
+                <div class="project-content">
+
+                    <div class="project-label">
+                        WEB DEVELOPMENT
+                    </div>
+
+                    <h3>Personal Portfolio</h3>
+
+                    <p>
+                        A responsive portfolio website designed to showcase
+                        programming skills and personal projects.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <a href="#" class="project-link">
+                        View Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Project 3 -->
+
+            <article class="project-card reveal" data-category="database">
+
+                <div class="project-image project-three">
+                    <span>03</span>
+                </div>
+
+                <div class="project-content">
+
+                    <div class="project-label">
+                        DATABASE
+                    </div>
+
+                    <h3>Database Project</h3>
+
+                    <p>
+                        A database project focused on organizing,
+                        storing, and retrieving information efficiently.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>MySQL</span>
+                        <span>SQL</span>
+                        <span>Database</span>
+                    </div>
+
+                    <a href="#" class="project-link">
+                        View Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Project 4 -->
+
+            <article class="project-card reveal" data-category="web">
+
+                <div class="project-image project-four">
+                    <span>04</span>
+                </div>
+
+                <div class="project-content">
+
+                    <div class="project-label">
+                        WEB DEVELOPMENT
+                    </div>
+
+                    <h3>Creative Website</h3>
+
+                    <p>
+                        An experimental website created to practice
+                        modern layouts, animations, and responsive design.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JS</span>
+                    </div>
+
+                    <a href="#" class="project-link">
+                        View Project →
+                    </a>
+
+                </div>
+
+            </article>
 
         </div>
+
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section contact-section">
-        <div class="section-title">
-            <p>GET IN TOUCH</p>
-            <h2>Contact Me</h2>
-        </div>
 
-        <div class="contact-content">
-            <p>
-                Interested in working together or simply want to connect?
-                Feel free to reach out.
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact-section">
+
+        <div class="contact-container">
+
+            <div class="section-heading reveal">
+                <p>LET'S CONNECT</p>
+                <h2>Get In <span>Touch</span></h2>
+            </div>
+
+            <p class="contact-description reveal">
+                Have a project, question, or opportunity?
+                Send me a message and I'll get back to you.
             </p>
 
-            <a href="mailto:your-email@gmail.com" class="email">
-                your-email@gmail.com
-            </a>
+
+            <form id="contactForm" class="contact-form reveal">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="name">Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Your name"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="your@email.com"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="subject">Subject</label>
+
+                    <input
+                        type="text"
+                        id="subject"
+                        placeholder="What is this about?"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">Message</label>
+
+                    <textarea
+                        id="message"
+                        rows="6"
+                        placeholder="Write your message..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button type="submit" class="btn primary submit-btn">
+                    Send Message →
+                </button>
+
+                <p id="formMessage"></p>
+
+            </form>
+
         </div>
+
     </section>
 
-    <!-- Footer -->
+
+    <!-- ================= FOOTER ================= -->
+
     <footer>
-        <p>© 2026 Hans Martin Almoroto. All rights reserved.</p>
+
+        <div class="footer-content">
+
+            <div>
+                <a href="#home" class="logo">
+                    HM<span>.</span>
+                </a>
+
+                <p>
+                    Building my skills one project at a time.
+                </p>
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>© 2026 Hans Martin Almoroto. All rights reserved.</p>
+        </div>
+
     </footer>
+
+
+    <!-- Back to top -->
+
+    <button id="backToTop" class="back-top">
+        ↑
+    </button>
+
 
     <script src="script.js"></script>
 
