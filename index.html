@@ -1,11 +1,221 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hans Martin | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">HM.</h2>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="small-text">HELLO, I'M</p>
+
+            <h1>Hans Martin<br><span>Almoroto</span></h1>
+
+            <p class="description">
+                A first-year IT student interested in web development,
+                programming, and creating useful digital solutions.
+            </p>
+
+            <div class="buttons">
+                <a href="#projects" class="btn">View Projects</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="section-title">
+            <p>GET TO KNOW ME</p>
+            <h2>About Me</h2>
+        </div>
+
+        <div class="about-content">
+            <div>
+                <p>
+                    I am an Information Technology student who enjoys learning
+                    about programming and web development.
+                </p>
+
+                <p>
+                    I am currently developing my skills in HTML, CSS, JavaScript,
+                    Java, databases, and other technologies. I enjoy building
+                    projects that allow me to apply what I learn.
+                </p>
+            </div>
+
+            <div class="about-info">
+                <div>
+                    <strong>Name</strong>
+                    <p>Hans Martin Almoroto</p>
+                </div>
+
+                <div>
+                    <strong>Course</strong>
+                    <p>Information Technology</p>
+                </div>
+
+                <div>
+                    <strong>Focus</strong>
+                    <p>Web Development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section skills-section">
+        <div class="section-title">
+            <p>WHAT I WORK WITH</p>
+            <h2>My Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <p>Creating structured and accessible web pages.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <p>Designing responsive and minimalist interfaces.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>Adding interaction and functionality to websites.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Java</h3>
+                <p>Building applications and practicing object-oriented programming.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>MySQL</h3>
+                <p>Working with databases and storing application data.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>GitHub</h3>
+                <p>Managing and publishing programming projects.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <div class="section-title">
+            <p>MY WORK</p>
+            <h2>Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <div class="project-number">01</div>
+
+                <h3>Alumni Information System</h3>
+
+                <p>
+                    A web-based alumni information system designed to organize
+                    and manage alumni records with chatbot support.
+                </p>
+
+                <div class="tags">
+                    <span>Java</span>
+                    <span>MySQL</span>
+                    <span>JDBC</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-number">02</div>
+
+                <h3>Personal Portfolio</h3>
+
+                <p>
+                    A minimalist personal website created to showcase my
+                    skills, projects, and experience.
+                </p>
+
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-number">03</div>
+
+                <h3>Programming Projects</h3>
+
+                <p>
+                    Various programming exercises and projects created while
+                    learning software development.
+                </p>
+
+                <div class="tags">
+                    <span>Java</span>
+                    <span>C++</span>
+                    <span>SQL</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+        <div class="section-title">
+            <p>GET IN TOUCH</p>
+            <h2>Contact Me</h2>
+        </div>
+
+        <div class="contact-content">
+            <p>
+                Interested in working together or simply want to connect?
+                Feel free to reach out.
+            </p>
+
+            <a href="mailto:your-email@gmail.com" class="email">
+                your-email@gmail.com
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Hans Martin Almoroto. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
