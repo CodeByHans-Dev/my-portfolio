@@ -316,6 +316,8 @@ body.dark header {
 .hero-buttons {
     display: flex;
 
+    flex-wrap: wrap;
+
     gap: 12px;
 
     margin-bottom: 35px;
@@ -1478,23 +1480,31 @@ footer {
     .footer-links {
         flex-wrap: wrap;
     }
-   .dot {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+
+}
+
+
+/* ==================================================
+   CODE CARD DOTS
+================================================== */
+
+.dot {
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
 }
 
 .dot-red {
-  background-color: red;
+    background-color: #ff5f56;
 }
 
 .dot-blue {
-  background-color: blue;
+    background-color: #4a90e2;
 }
 
 .dot-green {
-  background-color: green;
-}
-
+    background-color: #27c93f;
 }
